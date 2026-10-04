@@ -1,0 +1,29 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "restaurant-api": {
+      "root": "backend",
+      "framework": "express",
+      "buildCommand": "npm ci"
+    },
+    "restaurant-web": {
+      "root": "frontend",
+      "framework": "vite",
+      "buildCommand": "npm ci --include=dev && npm run build"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "restaurant-api"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "restaurant-web"
+      }
+    }
+  ]
+}
