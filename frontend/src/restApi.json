@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "heroSection": {
+        "title": "Authentic Indian Flavours",
+        "subtitle": "From crispy dosas to slow-cooked biryani, order online or reserve a table.",
+        "images": ["./hyderabadi biryani.jpg", "./paneer tikka.jpg", "./Masala dosa.jpg"]
+      },
+      "about": {
+        "title": "About Us",
+        "tagline": "The only thing we're serious about is food.",
+        "description": "We bring together the rich flavours of Indian cuisine, from crispy South Indian breakfasts to aromatic biryanis, delicious starters and traditional Indian desserts. Our menu combines authentic flavours with a modern dining experience, allowing customers to explore their favourite dishes and create their own meal combinations.",
+        "buttonText": "Explore Menu",
+        "image": "./Dal_tadka.jpg"
+      },
+      "ourQualities": [
+        { "id": 1, "image": "./quality_food.svg", "title": "Authentic Flavours", "description": "Traditional Indian recipes prepared with fresh ingredients and aromatic spices." },
+        { "id": 2, "image": "./super_taste.svg", "title": "Super Taste", "description": "Enjoy delicious vegetarian and non-vegetarian dishes inspired by India's rich culinary traditions." },
+        { "id": 3, "image": "./fast_delivery.svg", "title": "Fast Delivery", "description": "Freshly prepared meals delivered to your location from 9 AM to 9 PM." }
+      ],
+      "team": {
+        "intro": "The people behind the kitchen and the dining room.",
+        "members": [
+          { "id": 1, "name": "", "designation": "Head Chef", "note": "Leads the kitchen and the menu." },
+          { "id": 2, "name": "", "designation": "Tandoor Specialist", "note": "Kebabs, tikkas and breads from the clay oven." },
+          { "id": 3, "name": "", "designation": "Pastry & Sweets Chef", "note": "Traditional Indian desserts." },
+          { "id": 4, "name": "", "designation": "Restaurant Manager", "note": "Looks after reservations and service." }
+        ]
+      },
+      "navbarLinks": [
+        { "id": 1, "title": "Home", "to": "/" },
+        { "id": 2, "title": "About", "to": "/about" },
+        { "id": 3, "title": "Qualities", "to": "/qualities" },
+        { "id": 4, "title": "Menu", "to": "/menu" },
+        { "id": 5, "title": "Who Are We", "to": "/whoarewe" },
+        { "id": 6, "title": "Team", "to": "/team" },
+        { "id": 7, "title": "Reservation", "to": "/reservation" }
+      ]
+    }
+  ]
+}

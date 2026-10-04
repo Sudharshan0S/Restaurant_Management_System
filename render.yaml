@@ -1,0 +1,39 @@
+# Render Blueprint: New + > Blueprint > connect your GitHub repo. Fill the "sync: false" values when asked.
+services:
+  - type: web
+    name: restaurant-api
+    runtime: node
+    rootDir: backend
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: MONGO_URI          # MongoDB Atlas connection string, e.g. mongodb+srv://user:pass@cluster.mongodb.net/Restaurant
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL        # the admin login email
+        sync: false
+      - key: ADMIN_PASSWORD     # the admin password (use a strong one on a public site)
+        sync: false
+      - key: FRONTEND_URL       # the address of the static site below, e.g. https://restaurant-web.onrender.com
+        sync: false
+      - key: RESTAURANT_NAME
+        value: Indian Restaurant
+  - type: web
+    name: restaurant-web
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm ci --include=dev && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: VITE_API_URL       # the address of the API service above, e.g. https://restaurant-api.onrender.com (no trailing slash)
+        sync: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
