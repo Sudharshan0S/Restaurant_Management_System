@@ -34,9 +34,9 @@ export const DISHES = [
 // A combo = a dish + an add-on for an extra price. `dishIds` says which dishes it belongs to.
 // `image` is null for now - set a file name from frontend/public/ to show a combo photo.
 export const COMBOS = [
-  { comboId: "C1", comboName: "Masala Dosa + Filter Coffee", addOn: "Filter Coffee", extraPrice: 40, dishIds: ["1"], image: null },
-  { comboId: "C2", comboName: "Chole Bhature + Lassi", addOn: "Lassi", extraPrice: 50, dishIds: ["2"], image: null },
-  { comboId: "C3", comboName: "Paneer Tikka + Masala Chaas", addOn: "Masala Chaas", extraPrice: 60, dishIds: ["4"], image: null },
-  { comboId: "C4", comboName: "Biryani + Raita", addOn: "Raita", extraPrice: 50, dishIds: ["7"], image: null },
-  { comboId: "C5", comboName: "Tandoori Chicken + Mint Chutney", addOn: "Mint Chutney", extraPrice: 40, dishIds: ["5"], image: null },
+  { comboId: "C1", comboName: "Masala Dosa + Filter Coffee", addOn: "Filter Coffee", extraPrice: 40, dishIds: ["1"], image: "Masala Dosa Filter Coffee.jpg" },
+  { comboId: "C2", comboName: "Chole Bhature + Lassi", addOn: "Lassi", extraPrice: 50, dishIds: ["2"], image: "Chole Bhature Lassi.jpg" },
+  { comboId: "C3", comboName: "Paneer Tikka + Masala Chaas", addOn: "Masala Chaas", extraPrice: 60, dishIds: ["4"], image: "Paneer Tikka Masala Chaas.jpg" },
+  { comboId: "C4", comboName: "Biryani + Raita", addOn: "Raita", extraPrice: 50, dishIds: ["7"], image: "Biryani Raita.jpg" },
+  { comboId: "C5", comboName: "Tandoori Chicken + Mint Chutney", addOn: "Mint Chutney", extraPrice: 40, dishIds: ["5"], image: "Tandoori Chicken Mint Chutney.jpg" },
 ];
